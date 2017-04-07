@@ -1,7 +1,29 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSecuritySample", "CustomSecurity.csproj", "{FE32AA5A-8EAA-43B9-87EE-73271F89BA52}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSecurity", "CustomSecurity.csproj", "{FE32AA5A-8EAA-43B9-87EE-73271F89BA52}"
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PowerShellProject", "..\PowerShellProject\PowerShellProject.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ssrs configs", "ssrs configs", "{D2BCA0EA-4285-457C-8AE3-6435192477C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "custom", "custom", "{BF10A1C7-02FF-45C0-BE85-4352E1C8AB82}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\RSWebApp\Microsoft.ReportingServices.Portal.WebHost.exe - custom.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\RSWebApp\Microsoft.ReportingServices.Portal.WebHost.exe - custom.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rsreportserver - custom.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rsreportserver - custom.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rssrvpolicy - custom.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rssrvpolicy - custom.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\web - custom.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\web - custom.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "original", "original", "{9727693E-089B-4FAE-989B-DACEFD394FCD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\RSWebApp\Microsoft.ReportingServices.Portal.WebHost.exe - original.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\RSWebApp\Microsoft.ReportingServices.Portal.WebHost.exe - original.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rsreportserver - original.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rsreportserver - original.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rssrvpolicy - original.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\rssrvpolicy - original.config
+		..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\web - original.config = ..\..\..\..\..\..\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\web - original.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +35,16 @@ Global
 		{FE32AA5A-8EAA-43B9-87EE-73271F89BA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE32AA5A-8EAA-43B9-87EE-73271F89BA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE32AA5A-8EAA-43B9-87EE-73271F89BA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF10A1C7-02FF-45C0-BE85-4352E1C8AB82} = {D2BCA0EA-4285-457C-8AE3-6435192477C8}
+		{9727693E-089B-4FAE-989B-DACEFD394FCD} = {D2BCA0EA-4285-457C-8AE3-6435192477C8}
 	EndGlobalSection
 EndGlobal
